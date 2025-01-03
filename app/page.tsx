@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 import MyWorks from "./my-works/page";
 import { useDarkMode } from './hooks/darkmode';
@@ -17,13 +17,13 @@ export default function Home() {
         {/* Banner Section */}
         <section id="banner" className="min-h-screen flex flex-col sm:flex-row items-center justify-center gap-16">
           <div className="text-start space-y-4">
-            <h6 className="text-sm font-medium text-neutral-550 dark:text-gray-600">
+            <h6 className="text-sm font-medium text-neutral-550 dark:subTitle">
               Hello, Welcome
             </h6>
-            <h1 className="text-4xl font-bold text-gray-800 dark:text-gray-300">
+            <h1 className="text-4xl font-bold text-gray-800 dark:text-primary">
               I&#39;M REYJAN SUNGA
             </h1>
-            <p className="text-base text-neutral-500 dark:text-gray-500">
+            <p className="text-base font-medium text-neutral-500 dark:subTitle">
               A passionate computer programmer
             </p>
           </div>

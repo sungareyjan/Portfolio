@@ -6,8 +6,8 @@ export default function AboutMe() {
         <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
           <div className="flex gap-4 items-center flex-col sm:flex-row">
             <div className="text-start space-y-4">
-              <h1 className="text-4xl font-bold text-gray-800 dark:text-gray-300">About Me</h1>
-              <p className="text-base text-gray-500">A passionate full stack developer from philippines</p>
+              <h1 className="text-4xl font-bold text-gray-800 dark:text-skyBlue">About Me</h1>
+              <p className="text-base text-gray-500 dark:subTitle">A passionate full stack developer from philippines</p>
               <div>I&#39;m a Full Stack Developer with a passion for turning concepts into cutting-edge apps. My focus at the Department of Agriculture in Region 3 is on process optimization and the development of user-friendly apps. I hold a Bachelor&#39;s degree in Information Technology.</div>
               <div>In addition to my skill in development, I&#39;m always learning new things. In an effort to be on the cutting edge of web programming, I&#39;m currently exploring the worlds of Node js and React js. managing an Ubuntu server with cyberpanel and LiteSpeed are something I&#39;m learning about concurrently.This dual focus not only sharpens my coding skills but also empowers me to optimize server performance forseamless application delivery.</div>
               <div>Join me on this exciting expedition where I blend creativity with technology, turning challenges into opportunities in the dynamic world of software development and server administration.</div>

@@ -3,16 +3,44 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #F6F8FA;
+  --darkCharcoal: #ffffff;
   --foreground: #171717;
+  --deepSlateBlue: #2F3B54;
+  --subTitle: #171717;
+  --skyBlue:#171717;
+  --primary: #171717;
+  --softLavender :#C3A6FF;
+  --paleGreen:#BAE67E;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #2F3B54;
+    --darkCharcoal: #171C28;
+    --deepSlateBlue: #2F3B54;
+    --subTitle: #A2AABC;
     --foreground: #ededed;
+    --skyBlue:#5CCFE6;
+    --primary: #FFD580;
+    --softLavender :#C3A6FF;
+    --paleGreen:#BAE67E;
   }
 }
+/* EF6B73: Light Coral Pink
+C3A6FF: Soft Lavender
+FFD580: Light Peach
+FFAE57: Soft Orange
+BAE67E: Pale Green
+5CCFE6: Sky Blue
+FFCC66: Pale Yellow
+D7DCE2: Light Gray Blue
+A2AABC: Cool Gray
+8695B7: Slate Gray
+6679A4: Dusty Blue
+2F3B54: Deep Slate Blue
+1D2433: Midnight Blue
+171C28: Dark Charcoal Green */
 
 body {
   color: var(--foreground);
@@ -21,4 +49,20 @@ body {
 }
 html {
   scroll-behavior: smooth;
+}
+.glow-overlay {
+  --glow-size: 25rem;
+
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  user-select: none;
+  opacity: var(--glow-opacity, 0);
+  mask: radial-gradient(
+    var(--glow-size) var(--glow-size) at var(--glow-x) var(--glow-y),
+    var(--glow-color) 1%,
+    transparent 50%
+  );
+  transition: 400ms mask ease;
+  will-change: mask;
 }
