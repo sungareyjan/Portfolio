@@ -11,7 +11,7 @@ const Footer = ({darkMode}) => {
                 rel="noopener noreferrer">
                 <Image
                     aria-hidden
-                    className="dark:"
+                    className="neumorphic-social dark:"
                     src={darkMode ? "/dark-mode/facebook.svg" : "/light-mode/facebook.svg"}
                     alt="facebook icon"
                     width={25}
@@ -25,6 +25,7 @@ const Footer = ({darkMode}) => {
                 rel="noopener noreferrer">
                 <Image
                     aria-hidden
+                    className="neumorphic-social dark:"
                     src={darkMode ? "/dark-mode/instagram.svg" : "/light-mode/instagram.svg"}
                     alt="instagram icon"
                     width={25}
@@ -38,6 +39,7 @@ const Footer = ({darkMode}) => {
                 rel="noopener noreferrer">
                 <Image
                     aria-hidden
+                    className="neumorphic-social dark:"
                     src={darkMode ? "/dark-mode/tiktok.svg" : "/light-mode/tiktok.svg"}
                     alt="tiktok icon"
                     width={25}
@@ -51,6 +53,7 @@ const Footer = ({darkMode}) => {
                 rel="noopener noreferrer">
                 <Image
                     aria-hidden
+                    className="neumorphic-social dark:"
                     src={darkMode ? "/dark-mode/youtube.svg" : "/light-mode/youtube.svg"}
                     alt="youtube icon"
                     width={25}
@@ -64,6 +67,7 @@ const Footer = ({darkMode}) => {
                 rel="noopener noreferrer">
                 <Image
                     aria-hidden
+                    className="neumorphic-social dark:"
                     src={darkMode ? "/dark-mode/github.svg" : "/light-mode/github.svg"}
                     alt="github icon"
                     width={25}
@@ -77,6 +81,7 @@ const Footer = ({darkMode}) => {
                 rel="noopener noreferrer">
                 <Image
                     aria-hidden
+                    className="neumorphic-social dark:"
                     src={darkMode ? "/dark-mode/linkedin.svg" : "/light-mode/linkedin.svg"}
                     alt="linkedin icon"
                     width={25}
@@ -90,6 +95,7 @@ const Footer = ({darkMode}) => {
                 rel="noopener noreferrer">
                 <Image
                     aria-hidden
+                    className="neumorphic-social dark:"
                     src={darkMode ? "/dark-mode/paypal.svg" : "/light-mode/paypal.svg"}
                     alt="paypal icon"
                     width={25}

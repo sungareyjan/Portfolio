@@ -32,10 +32,10 @@ export default function Home() {
           <div className="grid grid-cols-2 gap-4">
 
             <div className="flex gap-4 items-center flex-col rounded lg:flex-row dark:bg-gradient-to-b from-background to-backgroundLite">
-              <div className="lg:max-w-full rounded overflow-hidden shadow-lg">
+              <div className="lg:max-w-full rounded overflow-hidden card-neumorphic ">
                   <Image
                       src="/dark-mode/Rj-codes.jpg"
-                      className="object-cover h-48 w-full"
+                      className="object-cover h-48 w-full  "
                       alt="RJ codes logo"
                       width={100}
                       height={200}
@@ -47,9 +47,9 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="px-6 pt-4 pb-2 ">
-                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#php</span>
-                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#react</span>
-                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#laravel</span>
+                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 card-icons">#php</span>
+                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 card-icons">#react</span>
+                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 card-icons">#laravel</span>
                 </div>
               </div>
             </div>

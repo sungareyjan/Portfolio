@@ -12,7 +12,7 @@ export default function Home() {
   return (
 <>
     <NavBar  darkMode={darkMode} setDarkMode={setDarkMode} />
-    <div className="min-h-screen grid  sm:p-20">
+    <div className="min-h-screen grid px-4 sm:px-10 md:px-20 lg:px-40 xl:px-80">
       <main className="flex flex-col gap-8 row-start-2 items-center ">
         {/* Banner Section */}
         <section id="banner" className="min-h-screen flex flex-col sm:flex-row items-center justify-center gap-16">
@@ -23,7 +23,7 @@ export default function Home() {
             <h1 className="text-4xl font-bold text-gray-800 dark:text-primary">
               I&#39;M REYJAN SUNGA
             </h1>
-            <p className="text-base font-medium text-neutral-500 dark:subTitle">
+            <p className="text-base font-medium text-neutral-500 dark:subTitle ">
               A passionate computer programmer
             </p>
           </div>
@@ -34,7 +34,7 @@ export default function Home() {
               alt="RJ Codes Logo"
               width={200}
               height={200}
-              className="rounded-lg shadow-lg"
+              className="rounded-lg shadow-lg neumorphic"
             />
           </div>
         </section>
