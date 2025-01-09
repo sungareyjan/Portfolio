@@ -19,7 +19,7 @@ export default {
         foreground: "var(--foreground)",
         primary: "var(--primary)",
         paleGreen: "var(--paleGreen)",
-      },
+      }
     },
   },
   plugins: [],

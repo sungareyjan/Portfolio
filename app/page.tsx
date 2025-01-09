@@ -41,7 +41,7 @@ export default function Home() {
 
         {/* Additional Layout */}
       <AboutMe/>
-      <MyWorks />
+      <MyWorks darkMode={darkMode} />
       <ContactMe/>
       </main>
       <Footer darkMode={darkMode} />

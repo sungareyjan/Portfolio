@@ -1,5 +1,6 @@
+'use client';
 import Image from "next/image";
-export default function Home() {
+const Home = ({darkMode}) => {
   return (
     <>
       <div id="my-works" className="grid grid-rows-[20px_1fr_20px]  justify-items-center min-h-screen p-8 pb-20 gap-16  sm:p-20 font-[family-name:var(--font-geist-sans)]">
@@ -46,6 +47,52 @@ export default function Home() {
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
                   </p>
                 </div>
+                
+                <div className="px-6 pt-4 pb-2 ">
+                <Image
+                      aria-hidden
+                      className="inline-block mr-2 mb-2 card-icons dark:"
+                      src={darkMode ? "/dark-mode/php.svg" : "/light-mode/php.svg"}
+                      alt="php icon"
+                      width={25}
+                      height={25}
+                  />
+                  <Image
+                      aria-hidden
+                      className="inline-block mr-2 mb-2 card-icons dark:"
+                      src={darkMode ? "/dark-mode/css3.svg" : "/light-mode/css3.svg"}
+                      alt="css3 icon"
+                      width={25}
+                      height={25}
+                  />
+                  <Image
+                      aria-hidden
+                      className="inline-block mr-2 mb-2 card-icons dark:"
+                      src={darkMode ? "/dark-mode/html5.svg" : "/light-mode/html5.svg"}
+                      alt="facebook icon"
+                      width={25}
+                      height={25}
+                  />
+              </div>
+              </div>
+            </div>
+
+
+            <div className="flex gap-4 items-center flex-col rounded lg:flex-row dark:bg-gradient-to-b from-background to-backgroundLite">
+              <div className="lg:max-w-full rounded overflow-hidden card-neumorphic ">
+                  <Image
+                      src="/dark-mode/Rj-codes.jpg"
+                      className="object-cover h-48 w-full  "
+                      alt="RJ codes logo"
+                      width={100}
+                      height={200}
+                    />
+                <div className="px-6 py-4">
+                  <div className="font-bold text-xl mb-2 text-gray-900 dark:text-gray-300">Title</div>
+                  <p className="text-gray-900 dark:text-gray-400">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                  </p>
+                </div>
                 <div className="px-6 pt-4 pb-2 ">
                   <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 card-icons">#php</span>
                   <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 card-icons">#react</span>
@@ -53,53 +100,29 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="flex gap-4 items-center flex-col rounded lg:flex-row  dark:bg-gradient-to-b from-background to-backgroundLite">
-              <div className="lg:max-w-full rounded overflow-hidden shadow-lg">
-                  <Image
-                      src="/dark-mode/Rj-codes.jpg"
-                      className="object-cover h-48 w-full"
-                      alt="RJ codes logo"
-                      width={200}
-                      height={200}
-                    />
-                <div className="px-6 py-4">
-                  <div className="font-bold text-xl mb-2 text-gray-900 dark:text-gray-300">Title</div>
-                  <p className="text-gray-900 dark:text-gray-400">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-                  </p>
-                </div>
-                <div className="px-6 pt-4 pb-2 ">
-                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#php</span>
-                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#react</span>
-                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#laravel</span>
-                </div>
-              </div>
-            </div>
-            <div className="flex gap-4 items-center flex-col rounded lg:flex-row dark:bg-gradient-to-b from-background to-backgroundLite">
-              <div className="lg:max-w-full rounded overflow-hidden shadow-lg">
-                  <Image
-                      src="/dark-mode/Rj-codes.jpg"
-                      className="object-cover h-48 w-full"
-                      alt="RJ codes logo"
-                      width={200}
-                      height={200}
-                    />
-                <div className="px-6 py-4">
-                  <div className="font-bold text-xl mb-2 text-gray-900 dark:text-gray-300">Title</div>
-                  <p className="text-gray-900 dark:text-gray-400">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-                  </p>
-                </div>
-                <div className="px-6 pt-4 pb-2 ">
-                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#php</span>
-                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#react</span>
-                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#laravel</span>
-                </div>
-              </div>
-            </div>
 
-          
-          
+            <div className="flex gap-4 items-center flex-col rounded lg:flex-row dark:bg-gradient-to-b from-background to-backgroundLite">
+              <div className="lg:max-w-full rounded overflow-hidden card-neumorphic ">
+                  <Image
+                      src="/dark-mode/Rj-codes.jpg"
+                      className="object-cover h-48 w-full  "
+                      alt="RJ codes logo"
+                      width={100}
+                      height={200}
+                    />
+                <div className="px-6 py-4">
+                  <div className="font-bold text-xl mb-2 text-gray-900 dark:text-gray-300">Title</div>
+                  <p className="text-gray-900 dark:text-gray-400">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                  </p>
+                </div>
+                <div className="px-6 pt-4 pb-2 ">
+                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 card-icons">#php</span>
+                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 card-icons">#react</span>
+                  <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 card-icons">#laravel</span>
+                </div>
+              </div>
+            </div>
 
           </div>
         </main>
@@ -107,3 +130,4 @@ export default function Home() {
     </>
   );
 }
+export default Home;
